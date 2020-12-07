@@ -106,9 +106,10 @@ h5 {
 
 .projects {
     display: grid;
+    width: 56.5vw;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-gap: 3vw;
+    grid-gap: 5vw;
 }
 
 .fa {
@@ -141,13 +142,13 @@ h5 {
 
 .project {
     display: flex;
+    flex-flow: column nowrap;
     text-align: center;
     justify-content: center;
     align-content: center;
     align-items: center;
     background-color:  white;
     border: solid 3px;
-    padding: 5.9vw;
     border-color: black;
 }
 
