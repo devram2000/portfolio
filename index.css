@@ -79,6 +79,13 @@ h5 {
 
 }
 
+.description {
+    display: inline-block;
+    width: 55vw;
+    margin-top: 5vw;
+    margin-bottom: 7vw;
+}
+
 #sketch-image {
     border: 15px;
     border-style: inset;
@@ -161,6 +168,5 @@ a {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    margin: 0.3vw;
-    margin-bottom: 3vw;
+    margin: 0.4vw;
 }
