@@ -1,13 +1,14 @@
 /* Put your style information here! */
 
 body {
-    margin: 20px;
     padding: 0px;
 
     display: flex;
     flex-flow: column wrap;
+    justify-content: center;
     align-content: center;
-    background: #fefbd8;
+    align-items: center;
+    background: white;
 
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Rboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
     color: #36486b;
@@ -15,29 +16,6 @@ body {
 }
 
 
-
-@media screen and (min-width: 400px) and (max-width: 799px) {
-    body {
-         margin: 100px;
-         margin-top: 20px;
-    }
-
-
-}
-
-@media screen and (min-width: 800px) {
-    body {
-         margin: 200px;
-         margin-top: 20px;
-    }
-
-
-}
-
-@media screen and (max-width: 350px) {
-
-
-}
 
 img {
     max-width: 100%;
@@ -48,45 +26,140 @@ h1 {
     text-align: center;
     color: #4040a1;
     font-weight: 900;
-    font-size: 50px;
+    font-size: 3vw;
 }
 
 h2 {
     color: #618685;
-    font-weight: 450;
-    font-size: 40px;
-    
+    font-style: 500;
+    font-size: 2vw;
 }
 
 h3 {
-    color: #4040a1;
-    font-style: italic;
-    font-size: 30px;
+    color: #9966ff;
+    font-weight: 700;
+    font-size: 2vw;
 }
 
+
 h4 {
-    color: #9966ff;
-    font-size: 25px;
+    color: #4040a1;
+    font-size: 1.75vw;
 }
 
 h5 {
     color: #808080;
-    font-size: 20px;
+    font-size: 1.5vw;
     font-style: italic;
 
 }
 
 .main {
+    background-color: #fefbd8;
+    padding: 10px;
+    margin: 30px;
+    margin-bottom: 0px;
+    border: solid 4px;
+    border-color: black;
+    width: 55vw;
+
+}
+
+.me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: white;
+    padding: 10px;
+    margin: 30px;
+    margin-bottom: 0px;
+    border: solid 4px;
+    border-color: black;
+    width: 55vw;
+
+}
+
+#sketch-image {
+    border: 15px;
+    border-style: inset;
+    border-color: #fefbd8;
+
+    width: 40%;
+}
+   /* filter: blur(50px);
+    -webkit-filter: blur(50px);
+    border-color: black; 
+}
+
+.projects {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: space-evenly;
+    background-color: #fefbd8;
     padding: 10px;
     margin: 30px;
     border: solid 4px;
     border-color: black;
     width: 80%;
+} */
+
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 3vw;
 }
 
-.self {
-    filter: blur(50px);
-    -webkit-filter: blur(50px);
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-linkedin {
+    margin: 5px;
+    background: #007bb5;
+    color: white;
+  }
+
+  .fa-instagram {
+    margin: 5px;
+
+    background: #125688;
+    color: white;
+  }
+  
+
+.project {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-color:  white;
+    border: solid 3px;
+    padding: 5.9vw;
     border-color: black;
+}
+
+
+a {
+    text-decoration:none;
+}
+
+.socials {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 0.3vw;
+    margin-bottom: 3vw;
 }
