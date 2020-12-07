@@ -1,1 +1,92 @@
 /* Put your style information here! */
+
+body {
+    margin: 20px;
+    padding: 0px;
+
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    background: #fefbd8;
+
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Rboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    color: #36486b;
+    font-size: 20px;
+}
+
+
+
+@media screen and (min-width: 400px) and (max-width: 799px) {
+    body {
+         margin: 100px;
+         margin-top: 20px;
+    }
+
+
+}
+
+@media screen and (min-width: 800px) {
+    body {
+         margin: 200px;
+         margin-top: 20px;
+    }
+
+
+}
+
+@media screen and (max-width: 350px) {
+
+
+}
+
+img {
+    max-width: 100%;
+    height: auto;    
+}
+
+h1 {
+    text-align: center;
+    color: #4040a1;
+    font-weight: 900;
+    font-size: 50px;
+}
+
+h2 {
+    color: #618685;
+    font-weight: 450;
+    font-size: 40px;
+    
+}
+
+h3 {
+    color: #4040a1;
+    font-style: italic;
+    font-size: 30px;
+}
+
+h4 {
+    color: #9966ff;
+    font-size: 25px;
+}
+
+h5 {
+    color: #808080;
+    font-size: 20px;
+    font-style: italic;
+
+}
+
+.main {
+    background-color: white;
+    padding: 10px;
+    margin: 30px;
+    border: solid 4px;
+    border-color: black;
+    width: 80%;
+}
+
+.self {
+    filter: blur(50px);
+    -webkit-filter: blur(50px);
+    border-color: black;
+}
