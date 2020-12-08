@@ -1,0 +1,223 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <title>Webpage Redesign: Local Restaurant</title>
+    <link rel="stylesheet" href="index.css">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <!-- Deployment Link: https://immense-citadel-92923.herokuapp.com/-->
+  </head>
+
+  <body>
+    <div class="header"><a href="../../home.html">Home</a></div>
+    <h1>Webpage Redesign: Local Restaurant</h1>
+    <h2>
+   		What makes a website interface "good" in terms of user experience and visual design?
+    </h2>
+    <a target="_blank" rel="noopener noreferrer" href="https://www.quitosrestaurant.com/">
+      <div class="quitos">
+        <img src="QuitosWebsite.png" id="sketch-image" alt="Original Restaurant Website"/>
+      </div>
+    </a>
+
+    <div class="overview">
+		  <p>
+        
+        Intuitively, we can feel when a website interface looks clean and operates well; 
+        it is much harder to identify the qualities that "good" interfaces have. 
+        This raises the question: <i>is a "good" interface subjective?</i>
+		  </p>
+
+      <p>
+        The answer to this question should not be as simple as a yes or no answer. 
+        Think about it: everyone has different opinions on what innately looks good.
+        Additionally, other factors like age, experience, cultural values, etc. can
+        alter how a person views and interacts with a particular interface.
+        However, there are indeed certain principles that can improve upon
+        overall user experience and visual design, and these can be identified as the 
+        defining features of a "good" interface. 
+		  </p>
+
+      <p>
+        To get some insight on this from a real-world example, I will be evaluating the homepage of 
+        a local restaurant called Quito's Seafood Restaurant & Bar 
+        (reference the image linked to their website above) for areas of improvement in terms 
+        of the usable/accessible aspects of user experience and visual design principles. Ultimately,
+        I will provide a responsive website redesign of the Quito's homepage that will attempt 
+        to improve upon the interface.
+		  </p>
+    </div>
+
+    <div class="part1">
+
+
+		  <h2>Usability and Accessibility</h2>
+
+      <h3>Usability Evaluation</h3>
+      
+      <h4>Learnability:</h4>
+      <h5>Evaluator Description: Will first time users be able to easily traverse and use the interface?</h5>
+      
+      <p> For first time users, the current set up of the Quito's main page is confusing to use for the following reasons:</p>
+      <ul> 
+      <li>The structure of the webpage is not consistent.</li>
+        <li style="margin-left:2em">There are rows with multiple items that are relatively condensed and rows with only 
+        one item surrounded with whitespace for no apparent reason.</li>
+      <li>The "New Fall Hours" on the top of the page differ from the hours later in the page. The dates and times 
+      are also not aligned in terms of structure intuitively.</li>
+        <li style="margin-left:2em">The new hours on the top of the page also only have the open time and not the closing time.</li>
+      <li>In the Navigation Bar, the main page of the website (the one currently being evaluated) is not linked. 
+      Therefore, the only way to get back to the title screen is by clicking on the top image, which is not signified 
+      to be linked in any way.</li>
+      <li>The section in the Navigation Bar for the website contains a Menu and Reservations section when these sections 
+      already exist on the main page; this would not be an issue if these links were directed to the same place, 
+      but they both link to different sections/webpages. </li>
+        <li style="margin-left:2em">The menus included on the main page and the 
+        menus included in the menu section of the Navigation are different (e.g. the Beer and Wine Menu is not included 
+        in the page from the Navigation Bar and the Fall Specials Menu is not included in the main page).</li>
+
+      </ul> 
+      
+
+      <h4>Memorability:</h4>
+      <h5>Evaluator Description: Will users who have not used the interface in a while recall how to traverse and use the interface with ease?</h5>
+      <p>In terms of Memorability, returning users should not have too much trouble relearning functionality
+       as the website is not too complex and has relatively clear labels. </p>
+      
+      <h4>Efficiency:</h4>
+      <h5>Evaluator Description: Will experienced users be able to quickly traverse and use the interface?</h5>
+      <p>Experienced users will mostly return to the website to primarily utilize two functionalities:
+      ordering online or making an online reservation. As of now, these two buttons on the main page are not
+      placed/sized for efficiency.</p>
+
+      <p> For instance, the Loyal Lobster Program flyer is almost quadruple the size
+      of the online reservation and online order sections without being 4 times as important. While the reservation button is relatively 
+      easy to find, the order online button is in a row of two other functionality boxes (gift cards and hours)
+      and is smaller than both of them, making it much more difficult to efficiently locate and click.</p>
+
+      <h4>Usability:</h4>
+      In terms of overall usability, this webpage interface is definitely not ideal specifically in the Learnability and
+      Memorability categories. Here are some other miscellaneous and overarching usability issues:
+      <ul> 
+      <li>The search icon in the Navigation Bar does not work.</li>
+      <li>There are multiple  <a target="_blank" rel="noopener noreferrer" href="https://www.wix.com/blog/2019/08/what-is-parallax-scrolling-explained-with-examples/">
+      parallex images</a> which are very cool, but they obscure the readability of the website.</li>
+        <li style="margin-left:2em">The first parallax image has text overlayed that inconveniently disappears when you scroll just a little bit.</li>
+        <li style="margin-left:2em">The second parallax image has text overlayed that is hard to read because it does not contrast much from the image.</li>
+      <li>There is effectively no color hierarchy.</li>
+        <li style="margin-left:2em">The background of the menu boxes, items that are supposed to be on the same level,
+        are different shades of blue.</li>
+      <li>The size hierarchy does not reflect importance of the sections.</li>
+      <li>Most of the information in the footer does not need to be there (should be in the About and Contact Us sections of the Navigation Bar).</li>
+      </ul> 
+      
+
+
+      <h3>Accessibility Evaluation</h3>
+      <h4>WebAIM WAVE:</h4>  
+      I used the <a target="_blank" rel="noopener noreferrer" href="https://wave.webaim.org/">WAVE Web Accessibility Evaluation Tool</a> as a check
+      for various accessibility measurements for the Quito's webpage. In summary, there are various places
+      where images are missing alternative text, forms are missing labels, and links are empty; all of 
+      which can pose issues in terms of accessibility for the user. There are multiple instances of pdfs 
+      being linked, which is a suboptimal way to convey information on a webpage due to navigation difficulties
+      and other accessibility issues. Last, the footer of the website has very low contrast between the text
+      and the background which can make it difficult to read the text.
+      
+      <h4>Screen Reader:</h4>
+      To evaluate accessibility for visually impaired users, I used a Screen Reader to read out the webpage 
+      in the audio form. In terms of interpretation, it was not too clear to me what the website was, but 
+      that may just be because I am not used to consuming webpage content in the audio form. It seemed like the
+      text jumped around a lot in terms of content category, so that added to the comprehension issues.
+      Also, all of the text that are in the image form were not read out, which means that a substatial portion
+      of the webpage would be missed by visually impaired users.
+
+      <h4>Google Translate:</h4>
+      To evaluate accessibility for non-english speakers, I used Google Translate to translate the webpage
+      from English to various other languages. Simlar to the issue with the screen reader, the flyers, buttons, 
+      and other text in the image form were not translated to the new language. This heavily impacted the 
+      overall comprehension of the website because functionalities like "Order Online" and "Join Now" for 
+      the Loyal Lobster program were not translated.
+
+    </div>
+
+    <div class="part2">
+		  <h2>Visual Redesign</h2>
+      With the above Usability and Accessibility issues with the current Quito's webpage interface in mind, 
+      I started to begin structuring the webpage's redesign.
+      <h3>Low-fidelity Wireframing</h3>
+      <h4>Desktop Wireframe</h4>
+      <div class="lofi lofi-desktop">
+        <img src="lofi/Desktop.png" alt="Desktop Wireframe"/>
+      </div>
+      <h4>Tablet Wireframe</h4>
+      <div class="lofi lofi-tablet">
+        <img src="lofi/Tablet.png" alt="Tablet Wireframe"/>
+      </div>
+      <h4>Phone Wireframe</h4>
+      <div class="lofi lofi-phone">
+        <img src="lofi/Phone.png" alt="Phone Wireframe"/>
+      </div>
+
+      <h3>High-Fidelity Prototyping</h3>
+      <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FrsmO9Zn7uthGDtEpqHSyb3%2FRedesign%3Fnode-id%3D0%253A1" allowfullscreen></iframe>
+      <h3>Visual Design Style Guide</h3>
+      <h4>Color Hierarchy</h4>
+      <div class="spacing b1">Primary Color</div>
+      <div class="spacing b2">Secondary Color</div>
+      <div class="spacing b3">Tertiary Color</div>
+      <div class="spacing b4">Quaternary Color</div>
+      <div class="spacing b5">Quinary Color</div>
+
+      <h4>Buttons</h4>
+        <button class="spacing b1"><div class = "button1">PRIMARY BUTTON</divs></button>
+        <button class="spacing b2"><div class = "button1">SECONDARY BUTTON</divs></button>
+        <button class="spacing b3"><div class = "button1">TERTIARY BUTTON</divs></button>
+
+      <h4>Text</h4>
+      <div class="spacing t1">Heading 1</div>
+      <div class="spacing t2">Heading 2</div>
+      <div class="spacing t3">Heading 3</div>
+      <div class="spacing t4">Heading 4</div>
+      <div class="spacing t5">Body Text</div>
+
+      <h4>Font</h4>
+      Font Priority Order (one font is chosen: whichever the first that the operating system has available)
+      <ul>
+      <li>BlinkMacSystemFont</li>
+      <li>"Segoe UI"</li>
+      <li>Rboto</li>
+      <li>Oxygen-Sans</li>
+      <li>Ubuntu</li>
+      <li>Cantarell</li>
+      <li>"Helvetica Neue"</li>
+      <ul>
+    </div>
+
+    <div class="part3">
+      <h2>Responsive Redesign</h2>
+      Finally, I implemented the newly redesigned webpage for Quito's based on the above wireframe, prototype,
+      and style guide. Note that the main focus of this redesign was the interface of the main page; therefore,
+      links to other pages/functionalities from the main page are dummy links.
+		  <h3>
+      <a target="_blank" rel="noopener noreferrer" href="responsive/redesign.html">Quito's Redesigned</a>
+      </h3>
+      In terms of structure and color hierarchy, this redesign is a lot more clear to the user as there are consistent
+      and meaningful rankings. Accessibility concerns are improved upon as well.
+    </div>
+    
+    <div class="conclusion">
+		  <h2>Conclusions</h2>
+      <p>
+        While the original interface for Quito's website was usable, it definitely was not ideal! Remember, no 
+        interface will ever be universally perfect, but we can always work towards making the interface a convenience
+        instead of an obstacle such that the user can experience the website's functionality as efficiently as possible.
+		  </p>
+
+		  <p>
+        Hopefully, you can now identify and possibly even utilize some of the qualities that
+        make a web interface "good" moving forward!
+		  </p>
+    </div>
+
+  </body>
+</html>

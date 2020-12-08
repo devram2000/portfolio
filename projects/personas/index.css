@@ -1,0 +1,234 @@
+/* Put your style information here! */
+
+body {
+    margin: 20px;
+    padding: 0px;
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: flex-start;
+    background: #fefbd8;
+
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Rboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    color: #36486b;
+    font-size: 20px;
+}
+
+
+
+@media screen and (min-width: 400px) and (max-width: 799px) {
+    body {
+         margin: 50px;
+         margin-top: 20px;
+         align-items: center;
+    }
+
+    .pstructure {
+        display: flex;
+        flex-direction: row;
+        padding: 50px;
+    }
+
+    .storyboard {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 10px;
+    }
+
+
+}
+
+@media screen and (min-width: 800px) {
+    body {
+         margin: 200px;
+         margin-top: 10px;
+
+    }
+
+
+}
+
+@media screen and (max-width: 350px) {
+    body {
+        align-items: center;
+        margin-top: 5px;
+
+    }
+
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;    
+}
+
+h1 {
+    color: #4040a1;
+    font-weight: 900;
+    font-size: 50px;
+}
+
+h2 {
+    color: #618685;
+    font-weight: 450;
+    font-size: 40px;
+    
+}
+
+h3 {
+    color: #4040a1;
+    font-style: italic;
+    font-size: 30px;
+}
+
+h4 {
+    color: #9966ff;
+    font-size: 25px;
+}
+
+h5 {
+    color: #808080;
+    font-size: 20px;
+    font-style: italic;
+
+}
+
+
+
+#sketch-image {
+    border: groove 10px;
+    width: 50%;
+}
+
+.remote {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.border{
+    border: inset 10px;
+}
+
+.personas {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+
+.pdescription {
+    display: flex;
+    flex-shrink: 2;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    border: 10px dashed black;
+    margin: 10px
+}
+
+.pleft {
+    text-align: right;
+}
+
+
+.empathy {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-left: 30px;
+}
+
+.empathysection {
+    padding: 10px;
+
+}
+
+.empathynotes {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.note {
+    border: 3px solid black;
+    padding: 25px;
+    margin: 10px;
+    width: 150px;
+    text-align: center;
+    color: #fefbd8;
+    
+}
+
+.think {
+    font-weight: bold;
+    color: #618685;
+}
+
+.feel {
+    font-weight: bold;
+    color: #4040a1;
+}
+
+.say {
+    font-weight: bold;
+    color: #b2b2b2;
+}
+
+.do {
+    font-weight: bold;
+    color: #36486b;
+}
+
+
+.note-think {
+    background: #618685;
+}
+
+
+.note-feel {
+    background: #4040a1;
+}
+
+.note-say {
+    background: #b2b2b2;
+}
+
+.note-do {
+    background: #36486b;
+}
+
+.storyboard {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #4040a1;
+    padding: 10px;
+    border: 10px solid black;
+     /*
+    
+      
+    background: black;
+    */
+}
+
+.storyimages {
+    margin: auto;
+}
+
+
+figcaption {
+    display: run-in;
+    width: 300px;
+    text-align: center;
+    color: #fefbd8;
+}
+
+
+.conclusion {
+    margin-bottom: 200px;
+}
