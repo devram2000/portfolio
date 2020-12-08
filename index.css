@@ -114,12 +114,11 @@ h5 {
     border-color: #fefbd8;
 
     width: 40%;
-}
-   /* filter: blur(50px);
-    -webkit-filter: blur(50px);
+   filter: blur(20px);
+    -webkit-filter: blur(20px);
     border-color: black; 
 }
-
+/* 
 .projects {
     display: flex;
     flex-flow: row wrap;
