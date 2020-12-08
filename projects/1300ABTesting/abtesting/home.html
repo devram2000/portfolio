@@ -1,0 +1,131 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title>A/B Testing: Online Cactus Store</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- Deployment link: https://pacific-ridge-28326.herokuapp.com -->
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+  </head>
+
+  <body>
+    <div class="header"><a href="../../../home.html">Home</a></div>
+    <h1>A/B Testing: Online Cactus Store</h1>
+
+    <h2>
+   		Can you objectively say that a certain interface choice is better than another?
+    </h2>
+
+    <a target="_blank" rel="noopener noreferrer" href="https://ancient-wave-03024.herokuapp.com">
+      <div class ="webpage">
+        <div class="webpage_a">
+          <img src="a_webpage.png" alt="A Webpage"/>
+        </div>
+        <div class="webpage_b">
+          <img src="b_webpage.png"  alt="B Webpage"/>
+        </div>
+      </div>
+    </a>
+
+    <div class="overview">
+      <p>
+        It would be near impossible to objectively come up with definitive measures to determine if an arbitrary
+        interface choice is better than another. However, one thing that we can consistently do is examine overall user interactions
+        with webpages to make quantitative statements. Specifically, we can use user statistics and testing to determine 
+        the effectiveness of a particular interface choice compared to another.
+      </p>
+      
+      <p>
+        To examine this, I made two similar versions of an Online Cactus Store interface with a few distinct changes 
+        (reference the image linked to the webpages above; refresh that page to view the other interface). Namely,
+        the main difference is the spacing and the borders around the cacti and cart functionality with interface
+        B adding more spacing and borders. 
+      </p>
+
+      <p>
+        I collected data on a sample of users using these interfaces, and, ultimately, 
+        I will use statistical tests on the user indicators of return rate and 
+        time to completion to determine if there is a statistically significant difference for 
+        aspects of user experience between webpages A and B.
+      </p>
+
+    </div>
+
+    <div class="hypotheses">
+      <h2>Hypotheses</h2>
+
+      <h3>Time to Completion</h3>
+      <h4>Null Hypothesis:</h4>
+      The difference in time to completion for interface A and interface B is not statistically significant.
+      <h4>Alternative Hypothesis:</h4>
+      The time to completion is statistically greater for interface A than interface B.
+      <h4>Reasoning:</h4>
+      I selected this Alternative Hypothesis because I believed the defined borders and more friendly spacing in interface B 
+      would allow users to more efficiently complete their task, which would overall reduce the time to completion
+      for interface B in comparison to interface A.
+
+      <h3>Return Rate</h3>
+      <h4>Null Hypothesis:</h4>
+      The difference in return rate for interface A and interface B is not statistically significant.
+      <h4>Alternative Hypothesis:</h4>
+      The return rate is statistically greater for interface A than interface B.
+      <h4>Reasoning:</h4>
+      I selected this Alternative Hypothesis because I believed the emphasis around the add to cart functionality with
+      border and spacing for interface B would allow users to be able to more efficiently track the amount of items added
+      to their cart, which would overall reduce the return rate for interface B in comparison to interface A.
+    </div>
+
+    <div class="data">
+      <h2>Data Collection</h2>
+      <p>
+        Data was collected by having my classmates utilize one of the interfaces (interface A vs. B was
+        randomly assigned by the webpage). They were asked to add $150 worth of cacti to their cart 
+        without further prompt.
+      </p>
+      
+      <p>
+        I then collected the data which determined time to completion (the amount of time the user
+        spent on the task) and return rate (did the user return from the cart back to the interface)
+        per user. I cleaned this data to ensure that all accounted users at least made a good attempt
+        to complete the task, and then I performed the hypothesis tests (t-test for time to completion
+        and chi-squared for return rate).
+      </p>
+    </div>
+
+    <div class="results">
+      <h2>Results and Broad Takeaways</h2>
+      <h3>Infographic</h3>
+      <img src="infographic.png" alt="Results Infographic"/>
+      <h3>Takeaways</h3>
+      <h4>Limitations</h4>
+      Likely the main limitation that affected the result of my test is that there were only 23 users
+      whose data was utilized for the tests, which is a relatively small sample size. Additionally, users
+      may not have acted how true cacti shoppers would because they were only asked to add cacti
+      to their cart instead of purchasing the cacti that they want.
+
+      <h4>Design Choices</h4>
+      My tests do not really tell us much about the design difference between the two websites because
+      the results of both failed to reject the null hypothesis. However, if there truly no statistically
+      significant difference between the two interfaces (which is not a conclusion that I can make from
+      my tests), that would imply that the border and spacing does not effectively make a difference for
+      aspects of user experience when considering design choices.
+    </div>
+
+    <div class="conclusion">
+      <h2>
+        Conclusion
+      </h2>
+      <p>
+        From this Online Cactus Store example, we have seen how it is possible to quantitatively evaluate
+        the effectiveness of an interface for user interactions, but we have also seen in this very instance 
+        that you may not be able to make a definitive conclusion depending on the data and confidence level.
+      </p>
+      
+      <p>
+        At the end of the day, A/B testing is an essential evaluator for web interface choices, and it will
+        continue to be for the foreseeable future.
+      </p>
+    </div>
+    
+  </body>
+</html>
