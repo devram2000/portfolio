@@ -15,12 +15,6 @@ body {
     font-size: 20px;
 }
 
-.fa-google {
-    margin: 5px;
-
-    background: #dd4b39;
-    color: white;
-  }
 
 img {
     max-width: 100%;
@@ -90,6 +84,15 @@ h5 {
 
 }
 
+.me-image {
+    border: 15px;
+    border-style: inset;
+    border-color: #fefbd8;
+
+    width: 40%;
+
+}
+
 .description {
     display: flex;
     flex-flow: row nowrap;
@@ -114,14 +117,8 @@ h5 {
 }
 
 #sketch-image {
-    border: 15px;
-    border-style: inset;
-    border-color: #fefbd8;
-
-    width: 40%;
    filter: blur(30px);
     -webkit-filter: blur(30px);
-    border-color: black; 
 }
 /* 
 .projects {
@@ -159,15 +156,24 @@ h5 {
     opacity: 0.7;
 }
 
+.fa-google {
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+
+    background: #dd4b39;
+    color: white;
+  }
+
+
 .fa-linkedin {
-    margin: 5px;
+    margin-right: 0.5vw;
+
     background: #007bb5;
     color: white;
   }
 
   .fa-instagram {
-    margin: 5px;
-
+    margin-left: 0.5vw;
     background: #125688;
     color: white;
   }
@@ -194,5 +200,5 @@ a {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    margin: 0.4vw;
+    margin: 0.5vw;
 }
