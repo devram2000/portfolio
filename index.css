@@ -114,8 +114,8 @@ h5 {
     border-color: #fefbd8;
 
     width: 40%;
-   filter: blur(20px);
-    -webkit-filter: blur(20px);
+   filter: blur(30px);
+    -webkit-filter: blur(30px);
     border-color: black; 
 }
 /* 
